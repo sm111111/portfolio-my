@@ -1,0 +1,843 @@
+:root {
+    --primary-text-color: #071919;
+    --navbar-text-color: #ff8303;
+    --font-change:"Mitr", sans-serif;}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* background: #29db97; */
+    font-family: Arial, sans-serif;
+}
+
+header{
+    position:sticky;
+    top: 0;
+    background: whitesmoke;
+}
+
+header nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     /* background: red; */
+     padding: 20px;
+     
+}
+
+.logo-img img {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+   
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    font-family: var(--font-change);
+}
+
+a:hover{
+    color: var(--navbar-text-color);
+}
+
+.themeChange {
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.themeChange .bi-gear-wide-connected {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in;
+}
+
+.themeChange .bi-gear-wide-connected:hover {
+    color: var(--navbar-text-color); 
+}
+
+
+.aftersmallScreen {
+    display: none;
+}
+
+
+
+/* -------------------------------------------- Hero Section --------------------------------------------------- */
+section {
+    padding: 100px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    /* background: green; */
+}
+
+.hero-container1 {
+    flex: 1;
+    color: var(--primary-text-color);}
+
+.hero-container1 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+    font-family: var(--font-change);
+}
+
+.hero-container1 p {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+    font-family: var(--font-change);
+}
+
+.hero-container1 button {
+    padding: 20px 40px;
+    background: var(--navbar-text-color);
+    border: none;
+    /* color: var(--primary-text-color); */
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 40px;
+    font-family: var(--font-change);
+}
+
+
+
+.hero-container1 button:hover {
+    background:orange;
+}
+
+.hero-container2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container2 img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+.deatils{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.detalis-box p{
+    color: var(--navbar-text-color);
+    font-weight: 600;
+    font-family: var(--font-change);
+}
+
+/* ----------------------------------------- services ----------------------------------------- */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background: green; */
+}
+
+.services h5{
+    color: var(--navbar-text-color);
+   font-size: 1rem;
+   font-weight: 700;
+   font-family: var(--font-change);
+}
+
+.services p{
+   font-weight: 700;
+   font-size: 2rem;
+   color: var(--primary-text-color);
+   font-family: var(--font-change);
+}
+
+.services-carosoul{
+    margin-top: 50px;
+    width: 100%;
+    /* background: yellow; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.services-box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: white; 
+    padding: 20px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+} 
+
+.services-box .services-icon{
+    background:  var(--navbar-text-color);
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.services-box .services-icon .icons{
+    font-size: 3rem;
+    /* color: var(--primary-text-color); */
+    color: whitesmoke;
+}
+
+.services-box span{
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: var(--font-change);
+    color: var(--primary-text-color);
+}
+
+.services-box p{
+    font-family: var(--font-change);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+/* --------------------------------------------------search------------------------------------------------------ */
+
+.search{
+    overflow: hidden;
+}
+
+.search h4{
+    text-align: center;
+    font-family: var(--font-change);
+    color: var(--navbar-text-color);
+}
+
+.search p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font-change);
+    color: var(--primary-text-color);
+    font-weight: 700;
+}
+
+.search-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.search-filter span{
+    font-family: var(--font-change);
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.search-result-conatiner{
+    padding: 40px;
+    width: 100%;
+    /* background: red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+
+/* -----------------------------------------------MyexpirenceArea-------------------------------------------- */
+
+.MyexpirenceArea{
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;  
+    
+}
+
+.MyexpirenceArea h4{
+    color:  var(--navbar-text-color);
+    font-family: var(--font-change);
+}
+
+.MyexpirenceArea p{
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-change);
+}
+
+.MyexpirenceArea-container{
+    width: 100%;
+    background:  var(--navbar-text-color);
+    padding: 40px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    border-radius: 5px;
+}
+
+
+.MyexpirenceArea-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.MyexpirenceArea-box label{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    font-family: var(--font-change);
+}
+
+.MyexpirenceArea-box input{
+   
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+
+
+/* ---------------------------------------Testimonial------------------------------------------------------ */
+
+.Testimonial{
+    /* background: green;   */
+    gap: 10px;
+}
+
+.Testimonial h3{
+    color: var(--navbar-text-color);
+    font-weight: 500;
+    font-family: var(--font-change);
+}
+
+.Testimonial h1{
+    font-size: 2.5rem;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-family: var(--font-change);
+}
+
+.Testimonial-conttainer{
+    margin-top: 50px;
+    width: 100%;
+    /* background: greenyellow; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.Testimonial-box{
+    width: 45%;
+    background: rgb(235, 232, 232);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+
+.Testimonial-details{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.Testimonial-details img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   
+
+}
+
+.inside-Testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inside-Testimonial h4{
+    font-weight: 600;
+    color:  var(--navbar-text-color);
+    font-family: var(--font-change);
+
+ 
+}
+
+/* -----------------------------------------------------blog---------------------------------------------- */
+
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog h4 {
+    text-align: center;
+    padding: 10px;
+    color:  var(--navbar-text-color);
+    font-family: var(--font-change);
+}
+
+.blog p {
+    /* text-align: center; */
+    color: var(--primary-text-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-change);
+}
+
+.blog-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.blog-card {
+    width: 300px;
+    background:rgb(245, 243, 243);
+    border-radius: 20px;
+    margin: 10px;  
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
+
+.blog-card img {
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.blog-card img:hover {
+    transform: scale(1.1); 
+}
+
+.blog-details {
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+    gap: 20px;
+    background: #f4f4f4; 
+    padding: 30px;
+    gap: 10px;
+}
+
+.name-and-date {
+    display: flex;
+    gap: 10px;
+}
+
+.name-and-date p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    font-family: var(--font-change);
+}
+
+.name-and-date p strong {
+    color: var(--navbar-text-color);
+    font-family: var(--font-change);
+}
+
+.blog-details p {
+    align-items: start;
+    font-size: 0.8rem;
+    color: var(--primary-text-color);
+    font-family: var(--font-change);
+}
+
+.blog-details span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    font-family: var(--font-change);
+}
+
+
+/* ------------------------------------------------------contact----------------------------------------- */
+.contact-container {
+    /* background: green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.contact-info {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    border: 2.5px dotted var(--navbar-text-color);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.contact-info div {
+    width: 30%;
+}
+h2 {
+    color: #333;
+    font-family: var(--font-change);
+}
+form {
+    border: 2.5px dotted var(--navbar-text-color);
+    padding: 20px;
+    /* margin-top: 20px; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    border: 2.5px dotted var(--navbar-text-color);
+    font-family: var(--font-change);
+}
+form button {
+    padding: 10px 20px;
+    background: var(--navbar-text-color);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f4f4f4;
+    font-weight: 800;
+    font-family: var(--font-change);
+}
+
+/* -----------------------------------------------------footer------------------------------------------- */
+
+footer {
+    background-color:var(--navbar-text-color);
+     color: white;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    font-family: var(--font-change);
+}
+
+
+/* ---------------------------------------------responsivenes-------------------------------------- */
+
+@media (max-width: 700px) {
+    /* Header */
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* padding: 10px; */
+    }
+
+    .logo-img img {
+        width: 70px;
+        height: 30px;
+    }
+
+    
+    header nav #ulTools {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: #071919; */
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        backdrop-filter: blur(30px);
+        box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+        border: 2px solid rgba(255,225,255.0.18);
+    }
+
+    header nav ul li a {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--primary-text-color);
+        padding: 10px;
+        font-weight: 900;
+    }
+
+    header nav ul.show {
+        display: flex; /* Show the navigation menu */
+    }
+
+    .themeChange {
+        display: none;
+    }
+
+    .aftersmallScreen {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 2rem;
+    }
+
+    .exit{
+        display: flex;
+    }
+
+    section{
+        padding: 20px;
+        margin: 20px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-container1{
+        display: flex;
+        justify-content:flex-start;
+        /* align-items: center; */
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-container1 h1 {
+        font-size: 3rem;
+        
+    }
+
+    .hero-container1 p {
+        line-height: 1;
+        color: #4b4848;
+        
+    }
+
+    .hero-container1 button {
+        padding: 15px 30px;
+        font-size: 0.9rem;
+    }
+    
+    /* .deatils{
+        clip-path: ellipse(60% 40% at 50% 50%);
+         transform: skew(00deg);
+        transform: rotateX(15deg) rotateY(15deg);
+        background: red;
+    } */
+
+    .deatils .detalis-box h1{
+        font-size: 2rem;
+
+    }
+
+    /* Services Section */
+    .services {
+        gap: 20px;
+    }
+
+    .services h5{
+        text-align: center;
+    }
+
+    .services p{
+        text-align: center;
+    }
+
+    .services-carosoul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+
+    /* .search */
+    .search{
+        gap: 20px;
+    }
+
+    .search p{
+        font-size: 1.5rem;
+
+    }
+
+    .search-filter span{
+        font-size:10px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    .search-result-conatiner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display:grid ;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+    }
+
+    .search-card{
+        width: 10px;
+        margin: 5px;
+        border-radius: 20px;
+        transition:transform  0.3s ease;
+        cursor: pointer;
+    }
+
+    /* Testimonial Section */
+    .Testimonial-conttainer {
+        flex-direction: column;
+    }
+
+    .Testimonial-box {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 0.6rem;
+    }
+
+    /* Blog Section */
+
+    .blog p{
+        font-size: 1.5rem;
+    }
+
+
+    .blog-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        /* background: red; */
+    }
+
+    .blog-card {
+        width: 250px;
+        /* margin-bottom: 20px; */
+    }
+
+    .blog-details .name-and-date p{
+          font-size: 0.8rem;
+    }
+
+    .blog-details p{
+        font-size: 0.8rem;
+        color: grey;
+    }
+
+    .blog-details span{
+        color: grey;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    /* My Experience Area */
+    .MyexpirenceArea-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* --------------------------------------------------search-card-------------------------------- */
+
+.search-card{
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    transition:transform  0.3s ease;
+    cursor: pointer;
+}
+
+.search-card:hover{
+    transform :scale(1.05);
+
+}

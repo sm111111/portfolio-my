@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prosto+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-img">
+                <img src="https://images3.alphacoders.com/132/thumbbig-1328396.webp" alt="Logo" width="100px">
+            </div>
+            <ul id="ulTools">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#MyexpirenceArea">Work</a></li>
+            </ul>
+
+            <div class="change-theme">
+                <button class="themeChange">
+                    <i class="bi bi-gear-wide-connected" id="themeToggle"></i>
+                </button>
+            </div>
+
+
+            <div class="aftersmallScreen">
+                <i class="bi bi-filter-right"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-section">
+            <div class="hero-container1">
+                <h1>Shekhar<br> mali Portfolio Designer...</h1>
+                <p>I'm a Freelance UI/UX Designer and Product Desiger based in London, England. I strives to build
+                    immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+                <button onclick="contact()">Contact Me</button>
+
+
+                <div class="deatils">
+                    <div class="detalis-box">
+                        <h1>7+</h1>
+                        <p> Year Expirence</p>
+                    </div>
+                    <div class="detalis-box">
+                        <h1>300+</h1>
+                        <p> Complete Project</p>
+                    </div>
+                    <div class="detalis-box">
+                        <h1>135+</h1>
+                        <p>Happy Client</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container2">
+                <img src="./img/hero-person-img.png" alt="Hero Image">
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services">
+            <h5> My services</h5>
+            <p>What I do for My Customers</p>
+
+            <div class="services-carosoul">
+                <div class="services-box">
+                    <div class="services-icon"><i class="bi bi-code-slash icons"></i></div>
+                    <span>Web Design</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga id dolor placeat quis saepe
+                        commodi voluptate?</p>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-icon"><i class="bi bi-vector-pen icons"></i></div>
+                    <span>UI/UX Design</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga id dolor placeat quis saepe
+                        commodi voluptate?</p>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-icon"><i class="bi bi-phone icons"></i></div>
+                    <span>App Development</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga id dolor placeat quis saepe
+                        commodi voluptate?</p>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-icon"><i class="bi bi-megaphone icons"></i></div>
+                    <span>Digital Marketing</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga id dolor placeat quis saepe
+                        commodi voluptate?</p>
+                </div>
+
+                <!-- <div class="services-box">
+                    <div class="services-icon"><i class="bi bi-code-slash"></i></div>
+                    <span>Web Design</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga id dolor placeat quis saepe
+                        commodi quas ab eaque voluptate?</p>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-icon"><i class="bi bi-code-slash"></i></div>
+                    <span>Web Design</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga id dolor placeat quis saepe
+                        commodi quas ab eaque voluptate?</p>
+                </div> -->
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="search">
+            <h4>My Portfolio</h4>
+            <p>Showcasing</p>
+            <p>Some OF My Best Work</p>
+
+            <div class="search-filter">
+                <span data-filter="all">All</span>
+                <span data-filter="youtube">Youtube</span>
+                <span data-filter="soundcloud">SoundCloud</span>
+                <span data-filter="popup">Popup</span>
+                <span data-filter="details">Details</span>
+            </div>
+
+
+            <div class="search-result-conatiner" id="searchResultConatiner">
+                <!-- you have to show your result here  -->
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="MyexpirenceArea">
+        <div class="MyexpirenceArea">
+            <h4>Why Choose me</h4>
+            <p>My Expirence Area</p>
+
+            <div class="MyexpirenceArea-container">
+                <div class="MyexpirenceArea-box">
+                    <label>Facebook Marketing</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+
+                <div class="MyexpirenceArea-box">
+                    <label>Affiliate Marketing</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+
+                <div class="MyexpirenceArea-box">
+                    <label>Search Engine Optimization</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+
+                <div class="MyexpirenceArea-box">
+                    <label>Facebook Marketing</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+
+                <div class="MyexpirenceArea-box">
+                    <label>Content Writing</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+
+                <div class="MyexpirenceArea-box">
+                    <label>Web Ui Design</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+
+                <div class="MyexpirenceArea-box">
+                    <label>Youtube Marketing</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+
+                <div class="MyexpirenceArea-box">
+                    <label>Web Design</label>
+                    <input type="range" name="" id="" value="80" id="myRange">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Testimonial">
+            <h3>Testimonials</h3>
+            <br>
+            <h1>What my</h1>
+            <h1>Clients Say</h1>
+
+            <div class="Testimonial-conttainer">
+                <div class="Testimonial-box">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                    visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be
+                    used as a placeholder before final copy is available.
+                    <br>
+                    <br>
+                    <div class="Testimonial-details">
+                        <img src="https://axo-html.vercel.app/assets/images/testimonial/1.jpg" alt="">
+                        <div class="inside-Testimonial">
+                            <h4>Beseie Cooper</h4>
+                            <p>xyz Company</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Testimonial-box">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                    visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be
+                    used as a placeholder before final copy is available.
+                    <br>
+                    <br>
+                    <div class="Testimonial-details">
+                        <img src="https://axo-html.vercel.app/assets/images/testimonial/2.jpg" alt="">
+                        <div class="inside-Testimonial">
+                            <h4>Beseie Cooper</h4>
+                            <p>xyz Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+
+        <div class="blog">
+            <h4>My Blog</h4>
+            <p>Our Recent Updates,</p>
+            <p>Blog, Tips, Tricks & More</p>
+
+            <div class="blog-container">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://axo-html.vercel.app/assets/images/blog/1.png" alt="">
+                    </div>
+                    <div class="blog-details">
+                        <div class="name-and-date">
+                            <p><strong>UI/UX Design</strong> / 23.06.2022</p>
+                        </div>
+                        <p>User interface design or user interface engineering</p>
+                        <span>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                            demonstrate.</span>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://axo-html.vercel.app/assets/images/blog/1.png" alt="">
+                    </div>
+                    <div class="blog-details">
+                        <div class="name-and-date">
+                            <p><strong>UI/UX Design</strong> / 23.06.2022</p>
+                        </div>
+                        <p>User interface design or user interface engineering</p>
+                        <span>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                            demonstrate.</span>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://axo-html.vercel.app/assets/images/blog/1.png" alt="">
+                    </div>
+                    <div class="blog-details">
+                        <div class="name-and-date">
+                            <p><strong>UI/UX Design</strong> / 23.06.2022</p>
+                        </div>
+                        <p>User interface design or user interface engineering</p>
+                        <span>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                            demonstrate.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="contacts">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div>
+                    <h2>Mail</h2>
+                    <p>example@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Address</h2>
+                    <p>1540 Brookside Drive<br>Birmingham, Alabama, USA</p>
+                </div>
+                <div>
+                    <h2>Phone</h2>
+                    <p>0123456789</p>
+                </div>
+            </div>
+
+            <form>
+                <h2>Send Us a Message</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Me Message</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
